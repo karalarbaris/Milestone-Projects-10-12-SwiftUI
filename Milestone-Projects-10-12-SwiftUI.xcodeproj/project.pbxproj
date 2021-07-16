@@ -13,6 +13,10 @@
 		1570CB5226A0AE45005015CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1570CB5126A0AE45005015CF /* Preview Assets.xcassets */; };
 		1570CB5426A0AE45005015CF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570CB5326A0AE45005015CF /* Persistence.swift */; };
 		1570CB5726A0AE45005015CF /* Milestone_Projects_10_12_SwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1570CB5526A0AE45005015CF /* Milestone_Projects_10_12_SwiftUI.xcdatamodeld */; };
+		1570CB5F26A0AF83005015CF /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570CB5E26A0AF83005015CF /* NetworkManager.swift */; };
+		1570CB6226A0B278005015CF /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570CB6126A0B278005015CF /* PostData.swift */; };
+		1570CB6526A17E3B005015CF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570CB6426A17E3B005015CF /* DetailView.swift */; };
+		1570CB6726A24728005015CF /* FriendDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1570CB6626A24727005015CF /* FriendDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1570CB5326A0AE45005015CF /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		1570CB5626A0AE45005015CF /* Milestone_Projects_10_12_SwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Milestone_Projects_10_12_SwiftUI.xcdatamodel; sourceTree = "<group>"; };
 		1570CB5826A0AE45005015CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1570CB5E26A0AF83005015CF /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1570CB6126A0B278005015CF /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		1570CB6426A17E3B005015CF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1570CB6626A24727005015CF /* FriendDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				1570CB4A26A0AE41005015CF /* Milestone_Projects_10_12_SwiftUIApp.swift */,
-				1570CB4C26A0AE41005015CF /* ContentView.swift */,
+				1570CB6026A0AF8F005015CF /* Models */,
+				1570CB6326A17E1C005015CF /* Views */,
 				1570CB4E26A0AE45005015CF /* Assets.xcassets */,
 				1570CB5326A0AE45005015CF /* Persistence.swift */,
 				1570CB5826A0AE45005015CF /* Info.plist */,
@@ -73,6 +82,25 @@
 				1570CB5126A0AE45005015CF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1570CB6026A0AF8F005015CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1570CB5E26A0AF83005015CF /* NetworkManager.swift */,
+				1570CB6126A0B278005015CF /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1570CB6326A17E1C005015CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1570CB4C26A0AE41005015CF /* ContentView.swift */,
+				1570CB6426A17E3B005015CF /* DetailView.swift */,
+				1570CB6626A24727005015CF /* FriendDetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +173,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1570CB5426A0AE45005015CF /* Persistence.swift in Sources */,
+				1570CB6226A0B278005015CF /* PostData.swift in Sources */,
 				1570CB4D26A0AE41005015CF /* ContentView.swift in Sources */,
+				1570CB6526A17E3B005015CF /* DetailView.swift in Sources */,
+				1570CB5F26A0AF83005015CF /* NetworkManager.swift in Sources */,
 				1570CB5726A0AE45005015CF /* Milestone_Projects_10_12_SwiftUI.xcdatamodeld in Sources */,
 				1570CB4B26A0AE41005015CF /* Milestone_Projects_10_12_SwiftUIApp.swift in Sources */,
+				1570CB6726A24728005015CF /* FriendDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

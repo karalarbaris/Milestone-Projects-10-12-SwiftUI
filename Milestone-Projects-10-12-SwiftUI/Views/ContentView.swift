@@ -11,20 +11,32 @@ struct ContentView: View {
     
     @ObservedObject var networkManager = NetworkManager()
     
+    @FetchRequest(entity: UserCD.entity(), sortDescriptors: []) var users: FetchedResults<UserCD>
+    
     var body: some View {
         
         NavigationView {
-            List(networkManager.users) { user in
-                NavigationLink(destination: DetailView(users: networkManager.users, selectedUser: user)) {
-                    HStack {
-                        Text(user.name)
-//                        Text(user.friends[0].name)
-                    }
+//            List(networkManager.users) { user in
+//                NavigationLink(destination: DetailView(users: networkManager.users, selectedUser: user)) {
+//                    HStack {
+//                        Text(user.name)
+////                        Text(user.friends[0].name)
+//                    }
+//                }
+//
+//            }
+            Text("\(users.count)")
+            List(users) { user in
+                HStack {
+                    
+                    Text(user.name ?? "dsdfg")
                 }
-               
             }
+            
+            
         }
         .onAppear(perform: {
+            print("1. onAppear inside contentview")
             networkManager.fetchData()
         })
         
